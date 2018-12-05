@@ -7,7 +7,7 @@ public class TesteMedia {
   @Test
   public void Teste1(){
     Media m = new Media();
-    assertEquals(7, m.media(5, 9));
+    assertEquals(7, m.media(6, 8));
   }
   @Test
   public void Teste2(){
