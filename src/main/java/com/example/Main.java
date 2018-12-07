@@ -58,11 +58,11 @@ public class Main {
   
   @RequestMapping("/media")
   String media(Map<String, Object> model) {
-    int maior = 60;
+    int maior = 300;
      ArrayList<Integer> sequencia = new ArrayList<Integer>();
      for (int i = 1; i <= 50; i++) {
        sequencia.add(m.media(i*2, maior));
-       maior--;
+       maior-=4;
      }
      model.put("sequencia", sequencia);
     return "media";
