@@ -12,7 +12,7 @@ public class TesteMedia {
   @Test
   public void Teste2(){
     Media m = new Media();
-    assertEquals(3, m.media(1, 5));
+    assertEquals(2, m.media(1, 3));
   }
   @Test
   public void Teste3(){
