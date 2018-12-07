@@ -34,6 +34,8 @@ import java.util.Map;
 public class Main {
 
   private Fibonacci f = new Fibonacci();
+  
+  private Media m = new Media()
 
   public static void main(String[] args) throws Exception {
     SpringApplication.run(Main.class, args);
@@ -52,6 +54,18 @@ public class Main {
      }
      model.put("sequencia", sequencia);
     return "fibo";
+  }
+  
+  @RequestMapping("/media")
+  String media(Map<String, Object> model) {
+    int maior = 60;
+     ArrayList<int> sequencia = new ArrayList<int>();
+     for (int i = 1; i <= 50; i++) {
+       sequencia.add(media(i*2, maior));
+       maior--;
+     }
+     model.put("sequencia", sequencia);
+    return "media";
   }
 
 }
