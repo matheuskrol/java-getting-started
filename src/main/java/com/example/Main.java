@@ -61,7 +61,7 @@ public class Main {
     int maior = 60;
      ArrayList<Integer> sequencia = new ArrayList<Integer>();
      for (int i = 1; i <= 50; i++) {
-       sequencia.add(media(i*2, maior));
+       sequencia.add(m.media(i*2, maior));
        maior--;
      }
      model.put("sequencia", sequencia);
