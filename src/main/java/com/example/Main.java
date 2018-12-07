@@ -59,9 +59,9 @@ public class Main {
   @RequestMapping("/media")
   String media(Map<String, Object> model) {
     int maior = 60;
-     ArrayList<int> sequencia = new ArrayList<int>();
+     ArrayList<Long> sequencia = new ArrayList<Long>();
      for (int i = 1; i <= 50; i++) {
-       sequencia.add(media(i*2, maior));
+       sequencia.add((Long) media(i*2, maior));
        maior--;
      }
      model.put("sequencia", sequencia);
