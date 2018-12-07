@@ -35,7 +35,7 @@ public class Main {
 
   private Fibonacci f = new Fibonacci();
   
-  private Media m = new Media()
+  private Media m = new Media();
 
   public static void main(String[] args) throws Exception {
     SpringApplication.run(Main.class, args);
