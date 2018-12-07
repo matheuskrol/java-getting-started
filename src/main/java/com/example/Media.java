@@ -5,8 +5,8 @@ public class Media {
   public Media(){
     
   }
-  public static double media(double n1, double n2) {
-    double media = (n1 + n2) / 2;
+  public static int media(int n1, int n2) {
+    int media = (n1 + n2) / 2;
     System.out.println(media);
     return media;
   }
